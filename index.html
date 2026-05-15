@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Proyecto - Pre-Entrega</title>
+    
+    <!-- FUENTE DE GOOGLE FONTS (Obligatorio) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <!-- VINCULACIÓN CON TU ARCHIVO CSS (Obligatorio) -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- 1. HEADER Y NAV -->
+    <header>
+        <div class="logo">
+            <h2>Portal Web</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#resenas">Reseñas</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 2. MAIN CON SUS SECCIONES -->
+    <main>
+        
+        <!-- SECCIÓN INICIO (Con Multimedia obligatorio) -->
+        <section id="inicio" class="hero">
+            <h1>Bienvenidos a nuestro espacio</h1>
+            <p>Un proyecto diseñado para ofrecer soluciones dinámicas y eficientes.</p>
+            <div class="multimedia">
+                <!-- Imagen de muestra (Podés cambiarla por una tuya o un video/iframe) -->
+                <img src="https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&w=800&q=80" alt="Espacio de trabajo">
+            </div>
+        </section>
+
+        <!-- SECCIÓN PRODUCTOS (Para evaluar Flexbox obligatorio) -->
+        <section id="productos" class="productos-seccion">
+            <h2>Nuestros Productos</h2>
+            <div class="contenedor-flex">
+                <div class="card">
+                    <h3>Servicio Base</h3>
+                    <p>Ideal para dar los primeros pasos y establecer una estructura sólida.</p>
+                </div>
+                <div class="card">
+                    <h3>Plan Avanzado</h3>
+                    <p>Diseñado para proyectos en crecimiento que requieren más herramientas.</p>
+                </div>
+                <div class="card">
+                    <h3>Soporte Premium</h3>
+                    <p>Asistencia personalizada y optimización completa de punta a punta.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN RESEÑAS (Para evaluar CSS Grid obligatorio) -->
+        <section id="resenas" class="resenas-seccion">
+            <h2>Lo que dicen nuestros usuarios</h2>
+            <div class="contenedor-grid">
+                <div class="grid-item">"La interfaz es súper limpia y la navegación es muy fluida." - Carlos G.</div>
+                <div class="grid-item">"Excelente atención al cliente y soporte técnico rapidísimo." - Ana L.</div>
+                <div class="grid-item">"Me ayudó a organizar toda mi información en un solo lugar." - Javier M.</div>
+                <div class="grid-item">"Altamente recomendado por su facilidad de uso." - Sofía R.</div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN CONTACTO (Formulario con Formspree obligatorio) -->
+        <section id="contacto" class="contacto-seccion">
+            <h2>Contacto</h2>
+            <!-- El formulario ya está conectado a tu Formspree -->
+            <form action="https://formspree.io/f/xojrgnqe" method="POST" class="formulario">
+                <div class="campo">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                </div>
+                <div class="campo">
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+                </div>
+                <div class="campo">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" placeholder="Dejanos tu consulta..." required></textarea>
+                </div>
+                <button type="submit">Enviar Mensaje</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- 3. FOOTER -->
+    <footer>
+        <p>&copy; 2026 - Pre-Entrega Desarrollo Web. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
